@@ -1,0 +1,15 @@
+PROBLEM 5
+
+no program required
+
+First, obviously, we need all the primes
+
+1 2 3 5 7 11 13 17 19
+
+Then we need all the extras (i.e. both threes in nine)
+
+2 2 3 2
+
+Multiply them all together to get
+
+232792560

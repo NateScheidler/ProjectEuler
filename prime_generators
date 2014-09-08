@@ -1,0 +1,16 @@
+
+
+def naivePrimesLessThan(n):
+	if (n < 2): return [1]
+	primes = [1]
+	for i in range(2,n):
+		iIsPrime = True
+		for j in range(1, len(primes)):
+			if (primes[j] > np.sqrt(i)): break
+			if (i%primes[j] == 0):
+				iIsPrime = False
+				break
+		if (iIsPrime):
+			primes.append(i)
+	return primes
+

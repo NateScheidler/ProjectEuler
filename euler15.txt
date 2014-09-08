@@ -1,0 +1,14 @@
+# Euler Project 15
+
+This path-counting problem can be solved readily with Pascal's triangle.
+
+For a 2x2 grid, it goes like
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 3(6)3 1
+
+With the answer in the center of the 5th row (2*2+1)
+
+The center entry of the 41st row is 40!/(20!*20!) = 137846528820
