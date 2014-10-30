@@ -24,11 +24,11 @@ def naivePrimesLessThan(n):
 
 def isPrimeToList(n, checkList):
 	for i in range(1, len(checkList)):
-		if (n%checkList == 0): return False
+		if (n % len(checkList) == 0): return False
 	return True
 
 def smartPrimeHelper(primeList):
-	maxPrime = primeList(len(primeList)-1)
+	maxPrime = primeList[len(primeList)-1]
 	newPrimeList = list(primeList)
 	for i in range(maxPrime, maxPrime**2):
 		if (isPrimeToList(i, primeList)): newPrimeList.append(i)

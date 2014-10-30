@@ -59,9 +59,15 @@ def sieveToArray(sieve):
 			z.append(i)
 	return z
 
-p1e7 = sieveToArray(sieveOfEratosthenes(10000000))
+p1e7 = sieveToArray(sieveOfEratosthenes(2000000))
 
-np.savetxt('primes_below_ten_million.txt',p1e7)
+z=0
+for primes in p1e7:
+   z+=primes
+
+print z
+    
+print p1e7[1],p1e7[10000], p1e7[10001], p1e7[10002]
 
 # print doubleFrontPrimes(100)
 # print naivePrimes(100)
