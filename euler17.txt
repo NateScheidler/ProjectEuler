@@ -1,0 +1,30 @@
+one two three four five six seven eight nine 
+36
+
+ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen
+70
+
+(106)
+
+twenty X -> 6*10 + 36 = 96
+thirty X		96
+forty X			86
+fifty  			86
+sixty  			86
+seventy			106
+eighty			96
+ninety			96
+
+36 + 70 + 96*4 + 86*3 + 106 = 864
+
+(1->99) = 864
+
+needed 10 times -> 8540
+
+"hundred" -> 900 times -> 6300
+
+"one - nine" -> 100 times -> 3600
+
+"and" -> 99*9 times -> 2673
+
+"one thousand" -> one time -> 11

@@ -24,12 +24,6 @@ def sieveToArray(sieve):
 			z.append(i)
 	return z
 
-fourDigitPrimes = sieveToArray(sieveOfEratosthenes(10000))
-
-a = [1,2,3,0]
-b = sorted(a)
-print b
-
 def strip_down(a):
     return int("".join(sorted(str(a))))
 
@@ -46,28 +40,21 @@ def hash_up(a_list):
             table[a_key] = [a_i]
     return table
 
-def get_large_sets(hashT,n):
-    for key in hashT:
-        sortedVals = sorted(hashT[key])
-        if len(sortedVals) >= n:
-            dif = find_differences
-
 def find_differences(orderedList):
     n = len(orderedList)
-    dif = []
+    dif = 0
     for i in range(0,n):
         for j in range(0,i):
-            dif.append(orderedList[i]-orderedList[j])
-    return dif
-    
-print find_differences(b)
+            dif = orderedList[j] - orderedList[i]
+            if (orderedList[j] + dif) in orderedList:
+                print orderedList[i], orderedList[j], orderedList[j] + dif
 
+def find_enclosed_series(hashT):
+    for key in hashT:
+        sortedVals = sorted(hashT[key])
+        if len(sortedVals) >= 3:
+            find_differences(sortedVals)
 
+fourDigitPrimes = sieveToArray(sieveOfEratosthenes(10000))
 
-
-
-
-
-
-
-
+find_enclosed_series(hash_up(fourDigitPrimes))

@@ -15,3 +15,11 @@ k = 0
 for i in xrange(0,len(vln)):
 	k = vln[i] + k
 print k
+
+# Much shorter solution:
+
+z = 0
+for digit in str(2**1000):
+    z += int(digit)
+print z
+

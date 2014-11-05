@@ -1,15 +1,24 @@
-# Euler 13
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 27 13:41:37 2014
 
-import numpy as np
+@author: nscheidler
+"""
 
-data = np.loadtxt('euler13_data.txt')
+# Euler Project no. 13
 
-chop = 10**33
-print chop
-dataSum = 0
-for i in xrange(0, len(data)):
-	data[i] = data[i] / chop
-	print data[i]
-	dataSum = dataSum + data[i]
 
-print dataSum
+"""
+We just need the first 13 or so digits of the numbers to sum them
+and recover the first 10 correctly. Probably. 
+"""
+
+filepath = "C:\Users\NScheidler\Documents\large_numbers.txt"
+
+curSum = 0
+with open(filepath) as f:
+    for line in f:
+        a = int(line) / 10**39 # After some testing, this was the largest divisor I could get away with
+        curSum += a
+
+print curSum

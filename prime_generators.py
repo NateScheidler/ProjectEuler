@@ -68,6 +68,3 @@ for primes in p1e7:
 print z
     
 print p1e7[1],p1e7[10000], p1e7[10001], p1e7[10002]
-
-# print doubleFrontPrimes(100)
-# print naivePrimes(100)
