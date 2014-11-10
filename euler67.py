@@ -7,7 +7,7 @@ Created on Tue Oct 28 17:19:22 2014
 
 import numpy as np
 
-filepath = "C:\Users\NScheidler\Documents\Python Scripts\New Folder\ProjectEuler\giant_tri.txt"
+filepath = "C:\Users\NScheidler\Documents\Python Scripts\ProjectEuler\giant_tri.txt"
 
 last_line = []
 with open(filepath) as f:

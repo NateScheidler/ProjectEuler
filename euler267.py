@@ -17,7 +17,6 @@ Or f=1.0, and get a bajillion dollars once in a long while.
 
 
 
-import numpy as np
 import scipy.misc as sc
 
 
